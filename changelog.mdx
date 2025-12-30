@@ -1,0 +1,131 @@
+---
+title: Changelog
+description: Track the latest updates, new features, and improvements in Annelise Lawson O'BAILEY.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases in Annelise Lawson O'BAILEY. You receive automatic notifications for major versions, and check this page regularly for detailed changelogs.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or join the Discord community to get instant update notifications.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation pages, allowing multiple users to edit simultaneously
+- Introduced custom brand color picker with support for hex values like `#3B82F6`
+- New search indexing for faster page discovery across your documentation space
+
+## Improvements
+
+- Enhanced performance with lazy loading for large documentation trees
+- Updated UI components for better mobile responsiveness
+
+## Bug Fixes
+
+- Fixed issue where nested Expandable components would not collapse properly
+- Resolved parsing errors in MDX frontmatter with special characters
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated Mermaid diagram support directly in MDX code blocks
+- Added Update components for structured changelog entries like this one
+
+## Bug Fixes
+
+- Corrected JSX attribute parsing for arrays like `tags={["feature"]}`
+- Fixed heading hierarchy enforcement, preventing H1 usage in page bodies
+
+## Improvements
+
+- Optimized code block rendering with proper escaping for `{` and `}` characters
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Removed legacy single-quote support in JSX attributes; use double quotes only
+
+## New Features
+
+- Core MDX documentation engine with 15+ components including Steps, Tabs, and Cards
+- Full support for ParamField and ResponseField for API docs
+- Introduced Columns layout for feature grids
+
+## Initial Setup
+
+- Basic documentation space creation and project management
+
+</Update>
+
+## Upcoming Changes
+
+Preview what's coming next to Annelise Lawson O'BAILEY. These features enter beta soon.
+
+<Columns cols={3}>
+  <Card title="AI Assistant" icon="bot" href="#">
+    Automated content generation and suggestions.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#">
+    Full Git integration for documentation workflows.
+  </Card>
+  <Card title="Analytics Dashboard" icon="bar-chart-3" href="#">
+    Track page views and user engagement.
+  </Card>
+</Columns>
+
+## How to Upgrade
+
+Follow these steps to update your Annelise Lawson O'BAILEY instance.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run the version check command in your project root.
+````bash
+annelise version
+````
+  </Step>
+  <Step title="Update Package" icon="download">
+    Use your preferred package manager.
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install annelise@latest
+````
+````bash
+yarn add annelise@latest
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+    Restart your documentation server to apply changes.
+````bash
+npm run dev
+````
+  </Step>
+  <Step title="Review Changes" icon="book-open">
+    Read the full changelog above and test your pages.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  After upgrading, validate your MDX pages for parsing errors, especially around special characters like `{API_KEY}` or `<100ms`.
+</Callout>
+
+## Contribution Guidelines
+
+<Expandable title="How to Submit a Feature Request" default-open="true">
+  Create a new discussion on GitHub with the `feature-request` label. Include use cases and mockups.
+</Expandable>
+
+<Expandable title="Reporting Bugs">
+  Use the issue tracker. Provide reproducible steps, MDX snippets, and browser details.
+</Expandable>
